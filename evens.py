@@ -1,3 +1,6 @@
-for i in range(20):
-    if i%2==0:
-        print(i)
+def main():
+    for i in range(20):
+        if i%2==0:
+            print(i)
+
+main()
