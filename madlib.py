@@ -1,10 +1,17 @@
-def main():
+def promptForWords():
+    global place, noun, name, verb, noun2
     place=input("Enter a place: ")
-    nown=input("Enter a nown: ")
+    noun=input("Enter a noun: ")
     name=input("Enter a name: ")
     verb=input("Enter a verb: ")
-    nown2=input("Enter another nown: ")
+    noun2=input("Enter another noun: ")
 
-    print("Tim ran to the "+place+" to see the "+nown+". When he arived, he saw his friend, "+name+". They said, 'Tim! "+verb+" to the store, they are having a sale on "+nown2+".'")
+def makeAndPrintSentence():
+    print("Tim ran to the "+place+" to see the "+noun+". When he arived, he saw his friend, "+name+". They said, 'Tim! "+verb+" to the store, they are having a sale on "+noun2+".'")
+
+
+def main():
+    promptForWords()
+    makeAndPrintSentence()
 
 main()
