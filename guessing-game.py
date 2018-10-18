@@ -10,8 +10,15 @@ def main():
 
         if guess == answer:
             print("Nice! You guessed it!")
+            likeIt = str(input("Do you like " + answer +"? ('y' or 'n')"))
+            likeIt=likeIt.lower()
+            likeIt=likeIt.strip()
+            if likeIt == "y":
+                print("Cool, I like " + answer + " too.")
+            else:
+                print("Oh... I suppose we cant all have good tastes.")
             break
-        elif guess == "quit":
+        elif guess[0] == "q":
             print("You quit the game.")
             break
         else:
