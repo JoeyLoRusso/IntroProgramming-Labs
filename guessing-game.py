@@ -9,10 +9,14 @@ def main():
         guess=guess.strip()
 
         if guess == answer:
+            print("Nice! You guessed it!")
+            break
+        elif guess == "quit":
+            print("You quit the game.")
             break
         else:
             print("Thats not it, guess again.")
     
 main()
 
-print("Nice! You guessed it!")
+
