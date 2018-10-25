@@ -19,6 +19,7 @@ def doLoop():
         def getNums():
             num1 = int(input("Enter the first number: "))
             num2 = int(input("Enter the second number: "))
+
             return num1, num2
         
         if cmd == "add":
@@ -32,6 +33,14 @@ def doLoop():
             result = num1 * num2
         elif cmd == "div":
             num1, num2 = getNums()
+            
+            try:
+                frac = num1/num2
+            except:
+                print("Unable to divide by 0")
+                frac=0
+                num1, num2 = getNums()
+                                    
             result = num1 // num2
         elif cmd == "quit":
             break
