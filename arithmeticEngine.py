@@ -6,7 +6,7 @@
 def showIntro():
     print("Welcome to the Arithmetic Engine!")
     print("=================================\n")
-    print("Valid commands are 'add', 'mult', 'sub', 'div', and 'quit'.\n")
+    print("Valid commands are 'add', 'mult', 'sub', 'div', 'power' and 'quit'.\n")
 
 def showOutro():
     print("\nThank you for using the Arithmetic Engine…")
@@ -42,6 +42,9 @@ def doLoop():
                 num1, num2 = getNums()
                                     
             result = num1 // num2
+        elif cmd == "power":
+            num1, num2 = getNums()
+            result = num1 ** num2
         elif cmd == "quit":
             break
         else:
