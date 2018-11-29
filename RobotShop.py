@@ -1,11 +1,26 @@
-productNames = [ "Ultrasonic range finder",
-                 "Servo motor",
-                 "Microcontroller board"
-                 "Laser range finder",
-                 "Lithium polymer battery"]
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
 
-productPrices = [2.50, 14.99, 44.95, 34.95, 149.99, 8.99]
-productQuantities = [4, 10, 5, 7, 2, 8]
+products = [ Product("Ultrasonic range finder", 2.50, 4),
+             Product("Servo motor", 14.99, 10),
+             Product("Servo controller", 44.95, 5),
+             Product("Microcontroller board", 34.95, 7),
+             Product("Laser range finder", 149.99, 2),
+             Product("Lithium polymer battery", 8.99, 8)]
+
+#productNames = [ "Ultrasonic range finder",
+#                 "Servo controller", 
+#                 "Servo motor",
+#                 "Microcontroller board"
+#                 "Laser range finder",
+#                 "Lithium polymer battery"]
+#
+#productPrices = [2.50, 14.99, 44.95, 34.95, 149.99, 8.99]
+#productQuantities = [4, 10, 5, 7, 2, 8]
+
 
 def printStock():
     print()
